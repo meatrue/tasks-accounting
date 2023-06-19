@@ -1,0 +1,15 @@
+.container {
+  font-weight: 600;
+}
+
+.new {
+  color: var(--color-status-new);
+}
+
+.wip {
+  color: var(--color-status-wip);
+}
+
+.closed {
+  color: var(--color-status-closed);
+}

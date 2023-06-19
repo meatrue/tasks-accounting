@@ -1,0 +1,21 @@
+.list {
+  margin: 0;
+  padding: var(--padding);
+  list-style-type: none;
+}
+
+.item {
+  padding: var(--padding) 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--app-background-deeper);
+  }
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}

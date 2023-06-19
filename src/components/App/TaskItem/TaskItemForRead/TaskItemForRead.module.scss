@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0
+}
+
+.title {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  margin-right: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.row {
+  margin: 0;
+  padding: 5px 0
+}
+
+.additional {
+  font-size: 13px;
+  font-style: italic;
+}

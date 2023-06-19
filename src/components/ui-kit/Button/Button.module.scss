@@ -1,0 +1,33 @@
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color ease 300ms;
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: auto;
+  }
+}
+
+.green {
+  color: var(--color-white);
+  background-color: var(--button-background-colored);
+
+  &:not(:disabled):hover {
+    background-color: var(--panel-background-colored);
+  }
+}
+
+.gray {
+  color: var(--color-primary);
+  background-color: var(--app-background-deeper);
+
+  &:not(:disabled):hover {
+    background-color: var(--color-icon);
+  }
+}

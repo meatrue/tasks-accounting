@@ -1,0 +1,35 @@
+.formItem {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.label {
+  width: 20%;
+  min-width: 120px;
+  padding: 10px 20px 10px 0;
+  font-weight: 500;
+}
+
+.textInput {
+  flex-grow: 1;
+  display: block;
+  min-width: 240px;
+}
+
+.submit {
+  display: block;
+  width: 100%;
+}
+
+.successMessage {
+  font-size: 16px;
+  color: var(--button-background-colored);
+  text-align: center;
+}
+
+.error {
+  color: var(--color-error);
+  text-align: center;
+}

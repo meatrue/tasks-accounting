@@ -1,0 +1,14 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 4px;
+  background-color: transparent;
+  border: 2px solid var(--app-background-deeper);
+  border-radius: 6px;
+  cursor: pointer;
+
+  svg path {
+    fill: var(--color-icon);
+  }
+}

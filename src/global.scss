@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --max-width: 1600px;
+    --min-width: 900px;
+    --max-content-width: 1280px;
+    --min-height: 512px;
+
+    --padding: 20px;
+    --padding-header: 15px;
+
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-primary: #3b4a54;
+    --color-secondary: #666666;
+    --color-status-new: #fec656;
+    --color-status-wip: #007EFC;
+    --color-status-closed: #00a884;
+    --color-icon: #8696a0;
+    --color-error: #f05c5c;
+    --app-background: #eae6df;
+    --app-background-deeper: #d1d7db;
+    --panel-background-lighter: #f7f8fa;
+    --panel-header-background: #f0f2f5;
+    --panel-background-colored: #008069;
+    --button-background-colored: #00a884;
+
+    --border-radius: 8px;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 15px;
+    line-height: 1.3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: var(--color-primary);
+  }
+
+  body {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--app-background);
+    background-image: linear-gradient(180deg,var(--app-background),var(--app-background-deeper));
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  a {
+    color: var(--color-black);
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+}
